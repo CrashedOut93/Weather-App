@@ -45,7 +45,7 @@ const dateBuilder = (d) => {
         value={query}
         onKeyPress={search}
         />
-      </div>ernfjek
+      </div>
       {(typeof weather.main != "undefined") ? (
        <div>
       <div className="location-box">
