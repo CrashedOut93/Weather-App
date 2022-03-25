@@ -42,12 +42,12 @@ const dateBuilder = (d) => {
         className="search-bar"
         placeholder="Search..."
         onChange={e => setQuery(e.target.value)}
-        value={query}
+        value={query} 
         onKeyPress={search}
         />
       </div>
       {(typeof weather.main != "undefined") ? (
-       <div>
+      <div>
       <div className="location-box">
       <div className="location">{weather.name}, {weather.sys.country}</div>
       <div className="date">{dateBuilder(new Date())}</div>
@@ -58,7 +58,7 @@ const dateBuilder = (d) => {
       </div>
       <div className="weather">{weather.weather[0].main}</div>
       </div>
-       </div>
+      </div>
       ) : ("")}
       </main>
     </div>
